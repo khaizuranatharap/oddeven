@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="repurpose project.css">
+</head>
+<body>
+    <h3>Welcome to the odd-even checker</h3>
+    <p>here's a quick instruction to get you going!</p>
+    <ul>
+        <li>Enter your number below!</li>
+        <input type="number" name="" id="num" required>
+        <button onclick="Button()">Check!</button>
+
+        <div id="output"></div>
+
+        <script>
+            function Button() {
+                let goat = document.getElementById("num").value;
+                if (goat % 2 == 0) {
+                    document.getElementById("output").innerHTML = `Number ${goat} is an even number.`
+                } else {
+                    document.getElementById("output").innerHTML = `Number ${goat} is an odd number.`
+                }
+            }
+        </script>
+        
+    </ul>
+</body>
+</html>
